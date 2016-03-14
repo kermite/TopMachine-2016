@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageProject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Packages>
+    <PackageFile>
+      <OriginalFile>TopMachineData.xpck</OriginalFile>
+      <TypeName>CMWA.Packager.Custom.Package, CMWA.Packager.Custom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeName>
+      <Key>TopMachineData</Key>
+      <IsTranslation>false</IsTranslation>
+    </PackageFile>
+    <PackageFile>
+      <OriginalFile>TopMachineDico.xpck</OriginalFile>
+      <TypeName>CMWA.Packager.Custom.Package, CMWA.Packager.Custom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeName>
+      <Key>TopMachineDico</Key>
+      <IsTranslation>false</IsTranslation>
+    </PackageFile>
+    <PackageFile>
+      <OriginalFile>MainNavigation.xpck</OriginalFile>
+      <TypeName>CMWA.Packager.Custom.ApplicationNavigation, CMWA.Packager.Custom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeName>
+      <Key>MainNavigation</Key>
+      <IsTranslation>false</IsTranslation>
+    </PackageFile>
+    <PackageFile>
+      <OriginalFile>TrainingLists.xpck</OriginalFile>
+      <TypeName>CMWA.Packager.Custom.Package, CMWA.Packager.Custom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeName>
+      <Key>TrainingLists</Key>
+      <IsTranslation>false</IsTranslation>
+    </PackageFile>
+    <PackageFile>
+      <OriginalFile>Training4dbo.xpck</OriginalFile>
+      <TypeName>CMWA.Packager.Custom.Package, CMWA.Packager.Custom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeName>
+      <Key>Training4dbo</Key>
+      <IsTranslation>false</IsTranslation>
+    </PackageFile>
+    <PackageFile>
+      <OriginalFile>Templates\TrainingLists.xpck</OriginalFile>
+      <TypeName>CMWA.Packager.Custom.Package, CMWA.Packager.Custom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeName>
+      <Key>OriginalTrainingLists</Key>
+      <IsTranslation>false</IsTranslation>
+    </PackageFile>
+    <PackageFile>
+      <OriginalFile>Templates\Training4dbo.xpck</OriginalFile>
+      <TypeName>CMWA.Packager.Custom.Package, CMWA.Packager.Custom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeName>
+      <Key>OriginalTraining4dbo</Key>
+      <IsTranslation>false</IsTranslation>
+    </PackageFile>
+  </Packages>
+</PackageProject>

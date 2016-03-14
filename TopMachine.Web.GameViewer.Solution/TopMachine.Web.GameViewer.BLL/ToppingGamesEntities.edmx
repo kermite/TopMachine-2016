@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="llequehot6793com6306_topmachineModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="llequehot6793com6306_topmachineModelStoreContainer">
+          <EntitySet Name="GameCollectors" EntityType="llequehot6793com6306_topmachineModel.Store.GameCollectors" store:Type="Tables" Schema="cmwalolo" />
+          <EntitySet Name="GameConfigs" EntityType="llequehot6793com6306_topmachineModel.Store.GameConfigs" store:Type="Tables" Schema="cmwalolo" />
+          <EntitySet Name="GameDetails" EntityType="llequehot6793com6306_topmachineModel.Store.GameDetails" store:Type="Tables" Schema="cmwalolo" />
+          <EntitySet Name="GameRankings" EntityType="llequehot6793com6306_topmachineModel.Store.GameRankings" store:Type="Tables" Schema="cmwalolo" />
+          <EntitySet Name="Games" EntityType="llequehot6793com6306_topmachineModel.Store.Games" store:Type="Tables" Schema="cmwalolo" />
+          <EntitySet Name="GameSets" EntityType="llequehot6793com6306_topmachineModel.Store.GameSets" store:Type="Tables" Schema="cmwalolo" />
+          <EntitySet Name="GameTypes" EntityType="llequehot6793com6306_topmachineModel.Store.GameTypes" store:Type="Tables" store:Schema="cmwalolo" store:Name="GameTypes">
+            <DefiningQuery>SELECT 
+      [GameTypes].[Id] AS [Id], 
+      [GameTypes].[Nom] AS [Nom]
+      FROM [cmwalolo].[GameTypes] AS [GameTypes]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="GameShort" EntityType="llequehot6793com6306_topmachineModel.Store.GameShort" store:Type="Views" store:Schema="cmwalolo" store:Name="GameShort">
+            <DefiningQuery>SELECT 
+      [GameShort].[SetId] AS [SetId], 
+      [GameShort].[Date] AS [Date], 
+      [GameShort].[Name] AS [Name], 
+      [GameShort].[Id] AS [Id]
+      FROM [cmwalolo].[GameShort] AS [GameShort]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <EntityType Name="GameCollectors">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="bigint" />
+          <Property Name="Nom" Type="nvarchar" MaxLength="100" />
+          <Property Name="LastUpdate" Type="date" />
+        </EntityType>
+        <EntityType Name="GameConfigs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Xml" Type="ntext" Nullable="false" />
+          <Property Name="OriginalId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="GameDetails">
+          <Key>
+            <PropertyRef Name="GameId" />
+            <PropertyRef Name="Pseudo" />
+          </Key>
+          <Property Name="GameId" Type="bigint" Nullable="false" />
+          <Property Name="Pseudo" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Total" Type="int" />
+          <Property Name="Solos" Type="int" />
+          <Property Name="Warnings" Type="int" />
+          <Property Name="Time" Type="int" />
+          <Property Name="Percentage" Type="float" />
+          <Property Name="TopLost" Type="int" />
+          <Property Name="Top" Type="bit" />
+          <Property Name="Negative" Type="int" />
+          <Property Name="Selection" Type="int" />
+          <Property Name="Rating" Type="int" />
+          <Property Name="Status" Type="int" />
+          <Property Name="RoundsXml" Type="ntext" />
+        </EntityType>
+        <EntityType Name="GameRankings">
+          <Key>
+            <PropertyRef Name="Year" />
+            <PropertyRef Name="Month" />
+            <PropertyRef Name="ConfigGameId" />
+            <PropertyRef Name="Pseudo" />
+          </Key>
+          <Property Name="Year" Type="int" Nullable="false" />
+          <Property Name="Month" Type="int" Nullable="false" />
+          <Property Name="ConfigGameId" Type="int" Nullable="false" />
+          <Property Name="Pseudo" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Percentage" Type="float" />
+          <Property Name="NbParties" Type="int" />
+          <Property Name="LostTops" Type="int" />
+          <Property Name="Time" Type="int" />
+          <Property Name="TotalTops" Type="int" />
+          <Property Name="Position" Type="int" />
+          <Property Name="PlayerTop" Type="int" />
+          <Property Name="GameTop" Type="int" />
+          <Property Name="Selection" Type="int" />
+          <Property Name="BestTime" Type="int" />
+          <Property Name="BestScore" Type="float" />
+        </EntityType>
+        <EntityType Name="Games">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="SetId" Type="bigint" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="GameXml" Type="ntext" />
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GameSets">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="nvarchar" MaxLength="100" />
+          <Property Name="Annee" Type="int" Nullable="false" />
+          <Property Name="Mois" Type="int" Nullable="false" />
+          <Property Name="Jour" Type="int" Nullable="false" />
+          <Property Name="GameCollectorId" Type="bigint" />
+          <Property Name="LastUpdate" Type="date" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'llequehot6793com6306_topmachine.cmwalolo.GameTypes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="GameTypes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Nom" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'llequehot6793com6306_topmachine.cmwalolo.GameShort' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="GameShort">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="SetId" Type="bigint" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="llequehot6793com6306_topmachineModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ToppingGamesEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="GameCollectors" EntityType="llequehot6793com6306_topmachineModel.GameCollector" />
+          <EntitySet Name="GameConfigs" EntityType="llequehot6793com6306_topmachineModel.GameConfig" />
+          <EntitySet Name="GameDetails" EntityType="llequehot6793com6306_topmachineModel.GameDetail" />
+          <EntitySet Name="GameRankings" EntityType="llequehot6793com6306_topmachineModel.GameRanking" />
+          <EntitySet Name="Games" EntityType="llequehot6793com6306_topmachineModel.Game" />
+          <EntitySet Name="GameSets" EntityType="llequehot6793com6306_topmachineModel.GameSet" />
+          <EntitySet Name="GameTypes" EntityType="llequehot6793com6306_topmachineModel.GameType" />
+          <EntitySet Name="GameShorts" EntityType="llequehot6793com6306_topmachineModel.GameShort" />
+        </EntityContainer>
+        <EntityType Name="GameCollector">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Type" Type="Int64" />
+          <Property Name="Nom" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="DateTime" Name="LastUpdate" />
+        </EntityType>
+        <EntityType Name="GameConfig">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Xml" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="OriginalId" Type="Guid" />
+        </EntityType>
+        <EntityType Name="GameDetail">
+          <Key>
+            <PropertyRef Name="GameId" />
+            <PropertyRef Name="Pseudo" />
+          </Key>
+          <Property Name="GameId" Type="Int64" Nullable="false" />
+          <Property Name="Pseudo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Total" Type="Int32" />
+          <Property Name="Solos" Type="Int32" />
+          <Property Name="Warnings" Type="Int32" />
+          <Property Name="Time" Type="Int32" />
+          <Property Name="Percentage" Type="Double" />
+          <Property Name="TopLost" Type="Int32" />
+          <Property Name="Top" Type="Boolean" />
+          <Property Name="Negative" Type="Int32" />
+          <Property Name="Selection" Type="Int32" />
+          <Property Name="Rating" Type="Int32" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="RoundsXml" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="GameRanking">
+          <Key>
+            <PropertyRef Name="Year" />
+            <PropertyRef Name="Month" />
+            <PropertyRef Name="ConfigGameId" />
+            <PropertyRef Name="Pseudo" />
+          </Key>
+          <Property Name="Year" Type="Int32" Nullable="false" />
+          <Property Name="Month" Type="Int32" Nullable="false" />
+          <Property Name="ConfigGameId" Type="Int32" Nullable="false" />
+          <Property Name="Pseudo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Percentage" Type="Double" />
+          <Property Name="NbParties" Type="Int32" />
+          <Property Name="LostTops" Type="Int32" />
+          <Property Name="Time" Type="Int32" />
+          <Property Name="TotalTops" Type="Int32" />
+          <Property Name="Position" Type="Int32" />
+          <Property Name="PlayerTop" Type="Int32" />
+          <Property Name="GameTop" Type="Int32" />
+          <Property Name="Selection" Type="Int32" />
+          <Property Name="BestTime" Type="Int32" />
+          <Property Name="BestScore" Type="Double" />
+        </EntityType>
+        <EntityType Name="Game">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="SetId" Type="Int64" />
+          <Property Name="Date" Type="DateTime" />
+          <Property Name="Name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="GameXml" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GameSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Nom" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Annee" Type="Int32" Nullable="false" />
+          <Property Name="Mois" Type="Int32" Nullable="false" />
+          <Property Name="Jour" Type="Int32" Nullable="false" />
+          <Property Name="GameCollectorId" Type="Int64" />
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="DateTime" Name="LastUpdate" />
+        </EntityType>
+        <EntityType Name="GameType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Nom" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="GameShort">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int64" Name="SetId" />
+          <Property Type="DateTime" Name="Date" />
+          <Property Type="String" Name="Name" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="llequehot6793com6306_topmachineModelStoreContainer" CdmEntityContainer="ToppingGamesEntities">
+          <EntitySetMapping Name="GameCollectors"><EntityTypeMapping TypeName="llequehot6793com6306_topmachineModel.GameCollector"><MappingFragment StoreEntitySet="GameCollectors">
+            <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+            <ScalarProperty Name="Nom" ColumnName="Nom" />
+            <ScalarProperty Name="Id" ColumnName="Id" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="GameConfigs"><EntityTypeMapping TypeName="llequehot6793com6306_topmachineModel.GameConfig"><MappingFragment StoreEntitySet="GameConfigs">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Xml" ColumnName="Xml" />
+            <ScalarProperty Name="OriginalId" ColumnName="OriginalId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="GameDetails"><EntityTypeMapping TypeName="llequehot6793com6306_topmachineModel.GameDetail"><MappingFragment StoreEntitySet="GameDetails">
+            <ScalarProperty Name="GameId" ColumnName="GameId" />
+            <ScalarProperty Name="Pseudo" ColumnName="Pseudo" />
+            <ScalarProperty Name="Total" ColumnName="Total" />
+            <ScalarProperty Name="Solos" ColumnName="Solos" />
+            <ScalarProperty Name="Warnings" ColumnName="Warnings" />
+            <ScalarProperty Name="Time" ColumnName="Time" />
+            <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+            <ScalarProperty Name="TopLost" ColumnName="TopLost" />
+            <ScalarProperty Name="Top" ColumnName="Top" />
+            <ScalarProperty Name="Negative" ColumnName="Negative" />
+            <ScalarProperty Name="Selection" ColumnName="Selection" />
+            <ScalarProperty Name="Rating" ColumnName="Rating" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+            <ScalarProperty Name="RoundsXml" ColumnName="RoundsXml" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="GameRankings"><EntityTypeMapping TypeName="llequehot6793com6306_topmachineModel.GameRanking"><MappingFragment StoreEntitySet="GameRankings">
+            <ScalarProperty Name="Year" ColumnName="Year" />
+            <ScalarProperty Name="Month" ColumnName="Month" />
+            <ScalarProperty Name="ConfigGameId" ColumnName="ConfigGameId" />
+            <ScalarProperty Name="Pseudo" ColumnName="Pseudo" />
+            <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+            <ScalarProperty Name="NbParties" ColumnName="NbParties" />
+            <ScalarProperty Name="LostTops" ColumnName="LostTops" />
+            <ScalarProperty Name="Time" ColumnName="Time" />
+            <ScalarProperty Name="TotalTops" ColumnName="TotalTops" />
+            <ScalarProperty Name="Position" ColumnName="Position" />
+            <ScalarProperty Name="PlayerTop" ColumnName="PlayerTop" />
+            <ScalarProperty Name="GameTop" ColumnName="GameTop" />
+            <ScalarProperty Name="Selection" ColumnName="Selection" />
+            <ScalarProperty Name="BestTime" ColumnName="BestTime" />
+            <ScalarProperty Name="BestScore" ColumnName="BestScore" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Games"><EntityTypeMapping TypeName="llequehot6793com6306_topmachineModel.Game"><MappingFragment StoreEntitySet="Games">
+            <ScalarProperty Name="SetId" ColumnName="SetId" />
+            <ScalarProperty Name="Date" ColumnName="Date" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="GameXml" ColumnName="GameXml" />
+            <ScalarProperty Name="Id" ColumnName="Id" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="GameSets"><EntityTypeMapping TypeName="llequehot6793com6306_topmachineModel.GameSet"><MappingFragment StoreEntitySet="GameSets">
+            <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+            <ScalarProperty Name="Annee" ColumnName="Annee" />
+            <ScalarProperty Name="Mois" ColumnName="Mois" />
+            <ScalarProperty Name="Jour" ColumnName="Jour" />
+            <ScalarProperty Name="GameCollectorId" ColumnName="GameCollectorId" />
+            <ScalarProperty Name="Id" ColumnName="Id" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="GameTypes">
+            <EntityTypeMapping TypeName="llequehot6793com6306_topmachineModel.GameType">
+              <MappingFragment StoreEntitySet="GameTypes">
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GameShorts">
+            <EntityTypeMapping TypeName="llequehot6793com6306_topmachineModel.GameShort">
+              <MappingFragment StoreEntitySet="GameShort">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="SetId" ColumnName="SetId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="llequehot6793com6306_topmachineModel.GameCollector" Width="1.5" PointX="0.75" PointY="0.75" Height="1.59568359375" IsExpanded="true" />
+        <EntityTypeShape EntityType="llequehot6793com6306_topmachineModel.GameConfig" Width="1.5" PointX="2.75" PointY="0.75" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="llequehot6793com6306_topmachineModel.GameDetail" Width="1.5" PointX="0.75" PointY="3.75" Height="3.7109993489583335" IsExpanded="true" />
+        <EntityTypeShape EntityType="llequehot6793com6306_topmachineModel.GameRanking" Width="1.5" PointX="2.75" PointY="3.75" Height="3.9033007812499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="llequehot6793com6306_topmachineModel.Game" Width="1.5" PointX="4.75" PointY="0.75" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="llequehot6793com6306_topmachineModel.GameSet" Width="1.5" PointX="4.75" PointY="3.75" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="llequehot6793com6306_topmachineModel.GameType" Width="1.5" PointX="7.375" PointY="0.75" Height="1.4033821614583317" />
+        <EntityTypeShape EntityType="llequehot6793com6306_topmachineModel.GameShort" Width="1.5" PointX="7.375" PointY="3.75" Height="1.7879850260416674" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

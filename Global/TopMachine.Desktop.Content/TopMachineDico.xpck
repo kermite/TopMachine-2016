@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Key>TopMachineDico</Key>
+  <IsTranslation>false</IsTranslation>
+  <Registered>false</Registered>
+  <Crypted>false</Crypted>
+  <Enabled>true</Enabled>
+  <LocationType>PersonalFiles</LocationType>
+  <FileType>File</FileType>
+  <Items>
+    <Package>
+      <Key>Data</Key>
+      <IsTranslation>false</IsTranslation>
+      <Registered>false</Registered>
+      <Crypted>false</Crypted>
+      <Enabled>true</Enabled>
+      <Filename>Data</Filename>
+      <LocationType>PersonalFiles</LocationType>
+      <FileType>Folder</FileType>
+      <Items>
+        <Package>
+          <Key>BASENL</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>diconl.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\diconl.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>GRIDNFR</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>GrilleNormalFR.txt</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\GrilleNormalFR.txt</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>GRIDNFRSLC</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>GrilleNormalSLC.txt</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\GrilleNormalSLC.txt</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>GRIDNFR1PT</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>GrilleNormal1PTS.txt</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\GrilleNormal1PTS.txt</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>GRIDSFR</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>GrilleSuper.txt</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\GrilleSuper.txt</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>GRIDNNL</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>GrilleNormalNL.txt</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\GrilleNormalNL.txt</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>GRIDNUK</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>GrilleNormalUK.txt</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\GrilleNormalUK.txt</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>GRIDNUS</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>GrilleNormalUS.txt</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\GrilleNormalUS.txt</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BASEFR</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>ods7.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\ods7.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BASEFRNOC</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>ods6noc.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\ods6noc.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BASEFRC</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>ods6c.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\ods6c.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BASEUK</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>sowpods06.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\sowpods06.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BASEUS</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>twl06.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\twl06.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BASEFRNEW</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>ods7new.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\ods7new.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2016-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BASEFRTRAINING</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>training.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\training.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BASEFRNOCNEW</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>ods6newnoc.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\ods6newnoc.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BASEFRCNEW</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>ods6newc.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\ods6newc.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>        
+      </Items>
+      <Version>1.0.0</Version>
+      <VersionDate>2010-12-19T19:21:06.742643+01:00</VersionDate>
+      <Attributes />
+    </Package>
+  </Items>
+  <Version>1.0.0</Version>
+  <VersionDate>2010-12-19T19:15:37.9048346+01:00</VersionDate>
+  <Attributes />
+</Package>

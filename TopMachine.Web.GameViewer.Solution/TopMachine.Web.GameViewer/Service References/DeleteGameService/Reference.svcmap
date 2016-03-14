@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="537d724d-b832-41c1-adaa-691972702224" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:26518/Services/DeleteServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DeleteServices.xsd" MetadataType="Schema" ID="30643101-77dd-461b-b35c-2feaf3dfa8c2" SourceId="1" SourceUrl="http://localhost:26518/Services/DeleteServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="DeleteServices.disco" MetadataType="Disco" ID="d6698278-2bb0-4695-b395-4d6a940273a4" SourceId="1" SourceUrl="http://localhost:26518/Services/DeleteServices.svc?disco" />
+    <MetadataFile FileName="DeleteServices1.xsd" MetadataType="Schema" ID="caa7c557-9092-4592-9507-4e420ff801c3" SourceId="1" SourceUrl="http://localhost:26518/Services/DeleteServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="DeleteServices.wsdl" MetadataType="Wsdl" ID="76742a3a-40d0-4eeb-9006-9baab877ad33" SourceId="1" SourceUrl="http://localhost:26518/Services/DeleteServices.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

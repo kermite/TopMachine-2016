@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0ca6d2fd2b144cc29e3ff086a95935b9" Name="Diagram1" ZoomLevel="32" >
+        <EntityTypeShape EntityType="ToppingModel.GameConfig" Width="1.5" PointX="4.75" PointY="3.25" />
+        <EntityTypeShape EntityType="ToppingModel.GameRanking" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ToppingModel.Game" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="ToppingModel.ViewUserIdAndName" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ToppingModel.GameConfig1" Width="1.5" PointX="8.625" PointY="4.5" />
+        <EntityTypeShape EntityType="ToppingModel.GameRanking1" Width="1.5" PointX="3.75" PointY="5.75" />
+        <EntityTypeShape EntityType="ToppingModel.Game1" Width="1.5" PointX="5.75" PointY="5.75" />
+        <EntityTypeShape EntityType="ToppingModel.ViewUserIdAndName1" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ToppingModel.GamesDetail" Width="1.5" PointX="7.75" PointY="6.75" />
+        <EntityTypeShape EntityType="ToppingModel.ViewGetRanking" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="ToppingModel.user" Width="1.5" PointX="9.75" PointY="6.75" />
+        <EntityTypeShape EntityType="ToppingModel.ViewGetGameDetail" Width="1.5" PointX="2.75" PointY="10.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

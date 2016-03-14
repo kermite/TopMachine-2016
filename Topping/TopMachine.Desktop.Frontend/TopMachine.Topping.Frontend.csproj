@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD8A9903-4E48-4D6D-B3A2-F3A720F855EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TopMachine.Topping.Frontend</RootNamespace>
+    <AssemblyName>TopMachine.Topping.Frontend</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\TopMachine.Topping.Frontend.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\TopMachine.Topping.Frontend.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\TopMachine.Topping.Frontend.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\TopMachine.Topping.Frontend.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\DLLS\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ToppingConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\ToppingConfig.Designer.cs">
+      <DependentUpon>ToppingConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\UserEdit.Designer.cs">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\ChatControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chat\ChatControl.Designer.cs">
+      <DependentUpon>ChatControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigGameDelegate.cs" />
+    <Compile Include="Controls\ConfigItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ConfigItem.Designer.cs">
+      <DependentUpon>ConfigItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FriendsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FriendsList.Designer.cs">
+      <DependentUpon>FriendsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ListPlayers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ListPlayers.Designer.cs">
+      <DependentUpon>ListPlayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShortRoomItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ShortRoomItem.Designer.cs">
+      <DependentUpon>ShortRoomItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RoomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RoomControl.Designer.cs">
+      <DependentUpon>RoomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RoomItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RoomItem.Designer.cs">
+      <DependentUpon>RoomItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="TopMachineContainerWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopMachineContainerWindow.Designer.cs">
+      <DependentUpon>TopMachineContainerWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToppingRooms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToppingRooms.Designer.cs">
+      <DependentUpon>ToppingRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IStoppable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\ToppingConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ToppingConfig.Designer.cs">
+      <DependentUpon>ToppingConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToppingConfigs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToppingConfigs.Designer.cs">
+      <DependentUpon>ToppingConfigs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopMachineContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TopMachineContainer.Designer.cs">
+      <DependentUpon>TopMachineContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopMachineForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TopMachineForm.Designer.cs">
+      <DependentUpon>TopMachineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToppingSelection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToppingSelection.Designer.cs">
+      <DependentUpon>ToppingSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDtoDelegate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ToppingConfig.resx">
+      <DependentUpon>ToppingConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UserEdit.resx">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\ChatControl.resx">
+      <DependentUpon>ChatControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ConfigItem.resx">
+      <DependentUpon>ConfigItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FriendsList.resx">
+      <DependentUpon>FriendsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ListPlayers.resx">
+      <DependentUpon>ListPlayers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ShortRoomItem.resx">
+      <DependentUpon>ShortRoomItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RoomControl.resx">
+      <DependentUpon>RoomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RoomItem.resx">
+      <DependentUpon>RoomItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopMachineContainerWindow.resx">
+      <DependentUpon>TopMachineContainerWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToppingRooms.resx">
+      <DependentUpon>ToppingRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ToppingConfig.resx">
+      <DependentUpon>ToppingConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToppingConfigs.resx">
+      <DependentUpon>ToppingConfigs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopMachineContainer.resx">
+      <DependentUpon>TopMachineContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopMachineForm.resx">
+      <DependentUpon>TopMachineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToppingSelection.resx">
+      <DependentUpon>ToppingSelection.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Packaging\CMWA.Packager.Custom\CMWA.Packager.Custom.csproj">
+      <Project>{30752819-A46D-49F7-9E8B-BD217071E967}</Project>
+      <Name>CMWA.Packager.Custom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Global\TopMachine.Desktop.Controls\TopMachine.Desktop.Controls.csproj">
+      <Project>{7bfd9931-c8b2-430b-b47b-ab4d28e417cb}</Project>
+      <Name>TopMachine.Desktop.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Global\TopMachine.Desktop.Overall\TopMachine.Desktop.Overall.csproj">
+      <Project>{32bfd672-3f80-48dd-9aea-27e8f10c8b03}</Project>
+      <Name>TopMachine.Desktop.Overall</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Topping.Core\Topping.Core.Logic.SQL\Topping.Core.Logic.SQL.csproj">
+      <Project>{aef620ab-bf36-4061-af20-348b55f3cd62}</Project>
+      <Name>Topping.Core.Logic.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TopMachine.Desktop.Common\TopMachine.Topping.Common.csproj">
+      <Project>{3C5B3D58-D666-465D-B56A-B6736B16FEF6}</Project>
+      <Name>TopMachine.Topping.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TopMachine.Desktop.Dawg.Safe\TopMachine.Topping.Dawg.Safe.csproj">
+      <Project>{A69BD013-6994-4593-A72D-E7E53E29BEBC}</Project>
+      <Name>TopMachine.Topping.Dawg.Safe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TopMachine.Desktop.Engine.GUI\TopMachine.Topping.Engine.GUI.csproj">
+      <Project>{8FECBFFD-6D29-4A41-9401-C2DA4C7CA927}</Project>
+      <Name>TopMachine.Topping.Engine.GUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TopMachine.Desktop.Engine\TopMachine.Topping.Engine.csproj">
+      <Project>{E39C0715-A9F1-4A1D-B20E-FBAF728216E5}</Project>
+      <Name>TopMachine.Topping.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Packaging\CMWA.Desktop.Tools\CMWA.Packager.Tools.csproj">
+      <Project>{0A049445-8AC6-4408-B242-BBD710C86F52}</Project>
+      <Name>CMWA.Packager.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Packaging\CMWA.Packager\CMWA.Packager.csproj">
+      <Project>{DED608D7-2A2D-4B4A-882F-1F7065ED4419}</Project>
+      <Name>CMWA.Packager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TopMachine.Topping.Dto\TopMachine.Topping.Dto.csproj">
+      <Project>{55230B09-84C7-4805-A2F6-BB7885BB3F2D}</Project>
+      <Name>TopMachine.Topping.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Topping.Core\Topping.Core.Logic\Topping.Core.Logic.csproj">
+      <Project>{456cd0ad-dcc9-48ad-a280-93feceb12e0f}</Project>
+      <Name>Topping.Core.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Topping.Core\Topping.Core.Proxy.Local\Topping.Core.Proxy.Local.csproj">
+      <Project>{c676436a-54c9-41bd-8671-dd6add5411d4}</Project>
+      <Name>Topping.Core.Proxy.Local</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\TopMachine.Topping.Dto.ConfigGameDto.datasource" />
+    <None Include="Properties\DataSources\TopMachine.Topping.Dto.GamesDetailDto.datasource" />
+    <None Include="Properties\DataSources\TopMachine.Topping.Dto.RankingDto.datasource" />
+    <None Include="Properties\DataSources\Topping.Core.Logic.Room.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\clock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_edit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joker[1].gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dynamite.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dynamite[1].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cog_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dynamite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\application_add.png" />
+    <Content Include="Resources\application_delete.png" />
+    <Content Include="Resources\application_edit.png" />
+    <Content Include="Resources\database_refresh.png" />
+    <Content Include="Resources\lock_edit.png" />
+    <Content Include="Resources\user_add.png" />
+    <Content Include="Resources\user_delete.png" />
+    <Content Include="Resources\user_edit.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

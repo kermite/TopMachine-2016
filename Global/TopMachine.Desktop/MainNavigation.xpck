@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationNavigation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Action>Navigate</Action>
+  <IsTranslation>false</IsTranslation>
+  <Enabled>false</Enabled>
+  <Items>
+    <ApplicationNavigation>
+      <Action>Navigate</Action>
+      <IsTranslation>false</IsTranslation>
+      <Enabled>true</Enabled>
+      <IsGroup>UP</IsGroup>
+      <Items>
+        <ApplicationNavigation>
+          <Action>Settings</Action>
+          <IsTranslation>true</IsTranslation>
+          <Image>TopMachineData\NavigationImages\Settings</Image>
+          <Enabled>true</Enabled>
+          <Items />
+          <Key>SETTINGS</Key>
+        </ApplicationNavigation>
+      </Items>
+      <Key>UP</Key>
+    </ApplicationNavigation>
+    <ApplicationNavigation>
+      <Action>Navigate</Action>
+      <IsTranslation>false</IsTranslation>
+      <Enabled>true</Enabled>
+      <IsGroup>MIDDLE</IsGroup>
+      <Items />
+      <Key>MIDDLE</Key>
+    </ApplicationNavigation>
+    <ApplicationNavigation>
+      <Action>Navigate</Action>
+      <IsTranslation>false</IsTranslation>
+      <Enabled>false</Enabled>
+      <IsGroup>DOWN</IsGroup>
+      <Items>
+        <ApplicationNavigation>
+          <Action>OpenControl</Action>
+          <IsTranslation>true</IsTranslation>
+          <Image>TopMachineData\NavigationImages\WordSearch</Image>
+          <Enabled>true</Enabled>
+          <Items />
+          <TargetControl>TopMachine.Desktop.Search.WordSearch</TargetControl>
+          <TargetAssembly>TopMachineData\TopMachine.Desktop.WordSearch</TargetAssembly>
+          <Key>WORDSEARCH</Key>
+        </ApplicationNavigation>
+        <ApplicationNavigation>
+          <Action>OpenControl</Action>
+          <IsTranslation>true</IsTranslation>
+          <Image>TopMachineData\NavigationImages\DictionaryReader</Image>
+          <Enabled>true</Enabled>
+          <Items />
+          <TargetControl>TopMachine.Desktop.Dico.DicoReader</TargetControl>
+          <TargetAssembly>TopMachineData\TopMachine.Desktop.Dico</TargetAssembly>
+          <Key>DICOREADER</Key>
+        </ApplicationNavigation>
+        <ApplicationNavigation>
+          <Action>OpenControl</Action>
+          <IsTranslation>true</IsTranslation>
+          <Image>TopMachineData\NavigationImages\Topping</Image>
+          <Enabled>true</Enabled>
+          <Items />
+          <TargetControl>TopMachine.Topping.Frontend.TopMachineForm</TargetControl>
+          <TargetAssembly>TopMachineData\TopMachine.Topping.Frontend</TargetAssembly>
+          <Key>TOPPING</Key>
+        </ApplicationNavigation>
+        <ApplicationNavigation>
+          <Action>OpenControl</Action>
+          <IsTranslation>false</IsTranslation>
+          <Image>TopMachineData\NavigationImages\Training</Image>
+          <Enabled>true</Enabled>
+          <Items />
+          <TargetControl>TopMachine.Training.FrontEnd.TrainingForm</TargetControl>
+          <TargetAssembly>TopMachineData\TopMachine.Training.FrontEnd</TargetAssembly>
+          <Key>TRAINING</Key>
+        </ApplicationNavigation>
+        <ApplicationNavigation>
+          <Action>Navigate</Action>
+          <IsTranslation>false</IsTranslation>
+          <Image>TopMachineData\NavigationImages\Games</Image>
+          <Enabled>true</Enabled>
+          <Items />
+          <Key>GAMES</Key>
+        </ApplicationNavigation>
+      </Items>
+      <Key>DOWN</Key>
+    </ApplicationNavigation>
+    <ApplicationNavigation>
+      <Action>Navigate</Action>
+      <IsTranslation>false</IsTranslation>
+      <Enabled>false</Enabled>
+      <Items />
+      <Key>New Key</Key>
+    </ApplicationNavigation>
+  </Items>
+  <Key>MainNavigation</Key>
+</ApplicationNavigation>

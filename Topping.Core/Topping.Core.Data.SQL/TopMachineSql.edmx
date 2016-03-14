@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="TopMachineDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="GameConfigs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="XmlConfig" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="GameRankings">
+          <Key>
+            <PropertyRef Name="Year" />
+            <PropertyRef Name="Month" />
+            <PropertyRef Name="ConfigGameId" />
+            <PropertyRef Name="Playerid" />
+          </Key>
+          <Property Name="Year" Type="int" Nullable="false" />
+          <Property Name="Month" Type="int" Nullable="false" />
+          <Property Name="ConfigGameId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Playerid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Percentage" Type="float" Nullable="false" />
+          <Property Name="NbParties" Type="int" Nullable="false" />
+          <Property Name="LostTops" Type="float" Nullable="false" />
+          <Property Name="Time" Type="int" Nullable="false" />
+          <Property Name="TotalTops" Type="int" Nullable="false" />
+          <Property Name="Position" Type="int" Nullable="false" />
+          <Property Name="Serie" Type="int" Nullable="false" />
+          <Property Name="PlayerTop" Type="int" Nullable="false" />
+          <Property Name="GameTop" Type="int" Nullable="false" />
+          <Property Name="Selection" Type="int" Nullable="false" />
+          <Property Name="BestTime" Type="int" Nullable="false" />
+          <Property Name="BestScore" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Games">
+          <Key>
+            <PropertyRef Name="GameId" />
+          </Key>
+          <Property Name="GameId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="GameConfigId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="GameXml" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GamesDetail">
+          <Key>
+            <PropertyRef Name="GameId" />
+          </Key>
+          <Property Name="GameId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" />
+          <Property Name="DetailXml" Type="nvarchar(max)" />
+          <Property Name="Total" Type="int" />
+          <Property Name="Solos" Type="int" />
+          <Property Name="Warnings" Type="int" />
+          <Property Name="Time" Type="int" />
+          <Property Name="Percentage" Type="float" />
+          <Property Name="TopLost" Type="int" />
+          <Property Name="Top" Type="int" />
+          <Property Name="Negative" Type="int" />
+          <Property Name="Selection" Type="int" />
+          <Property Name="Rating" Type="int" />
+          <Property Name="Status" Type="int" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="GameConfigId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="LoweredUserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+          <Property Name="FirstName" Type="varchar" MaxLength="256" />
+          <Property Name="LastName" Type="varchar" MaxLength="256" />
+          <Property Name="Email" Type="varchar" MaxLength="256" />
+          <Property Name="Pwd" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="isAdmin" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__GamesDeta__GameC__756D6ECB">
+          <End Role="GameConfigs" Type="Self.GameConfigs" Multiplicity="0..1" />
+          <End Role="GamesDetail" Type="Self.GamesDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GameConfigs">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GamesDetail">
+              <PropertyRef Name="GameConfigId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="TopMachineDBModelStoreContainer">
+          <EntitySet Name="GameConfigs" EntityType="Self.GameConfigs" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="GameRankings" EntityType="Self.GameRankings" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Games" EntityType="Self.Games" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="GamesDetail" EntityType="Self.GamesDetail" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <AssociationSet Name="FK__GamesDeta__GameC__756D6ECB" Association="Self.FK__GamesDeta__GameC__756D6ECB">
+            <End Role="GameConfigs" EntitySet="GameConfigs" />
+            <End Role="GamesDetail" EntitySet="GamesDetail" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TopMachineDBModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="TopMachineDBEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="Users" EntityType="TopMachineDBModel.Users" />
+          <EntitySet Name="GameConfigs" EntityType="TopMachineDBModel.GameConfigs" />
+          <EntitySet Name="GameRankings" EntityType="TopMachineDBModel.GameRankings" />
+          <EntitySet Name="Games" EntityType="TopMachineDBModel.Games" />
+          <EntitySet Name="GamesDetail" EntityType="TopMachineDBModel.GamesDetail" />
+          <AssociationSet Name="FK__GamesDeta__GameC__756D6ECB" Association="TopMachineDBModel.FK__GamesDeta__GameC__756D6ECB">
+            <End Role="GameConfigs" EntitySet="GameConfigs" />
+            <End Role="GamesDetail" EntitySet="GamesDetail" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Type="String" Name="FirstName" MaxLength="256" FixedLength="false" Unicode="false" Nullable="true" />
+          <Property Type="String" Name="LastName" MaxLength="256" FixedLength="false" Unicode="false" Nullable="true" />
+          <Property Type="String" Name="Email" MaxLength="256" FixedLength="false" Unicode="false" Nullable="true" />
+          <Property Name="Pwd" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="isAdmin" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GameConfigs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="XmlConfig" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="GamesDetail" Relationship="TopMachineDBModel.FK__GamesDeta__GameC__756D6ECB" FromRole="GameConfigs" ToRole="GamesDetail" />
+        </EntityType>
+        <EntityType Name="GameRankings">
+          <Key>
+            <PropertyRef Name="Year" />
+            <PropertyRef Name="Month" />
+            <PropertyRef Name="ConfigGameId" />
+            <PropertyRef Name="Playerid" />
+          </Key>
+          <Property Name="Year" Type="Int32" Nullable="false" />
+          <Property Name="Month" Type="Int32" Nullable="false" />
+          <Property Name="ConfigGameId" Type="Guid" Nullable="false" />
+          <Property Name="Playerid" Type="Guid" Nullable="false" />
+          <Property Name="Percentage" Type="Double" Nullable="false" />
+          <Property Name="NbParties" Type="Int32" Nullable="false" />
+          <Property Name="LostTops" Type="Double" Nullable="false" />
+          <Property Name="Time" Type="Int32" Nullable="false" />
+          <Property Name="TotalTops" Type="Int32" Nullable="false" />
+          <Property Name="Position" Type="Int32" Nullable="false" />
+          <Property Name="Serie" Type="Int32" Nullable="false" />
+          <Property Name="PlayerTop" Type="Int32" Nullable="false" />
+          <Property Name="GameTop" Type="Int32" Nullable="false" />
+          <Property Name="Selection" Type="Int32" Nullable="false" />
+          <Property Name="BestTime" Type="Int32" Nullable="false" />
+          <Property Name="BestScore" Type="Double" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Games">
+          <Key>
+            <PropertyRef Name="GameId" />
+          </Key>
+          <Property Name="GameId" Type="Guid" Nullable="false" />
+          <Property Name="GameConfigId" Type="Guid" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="GameXml" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="GamesDetail">
+          <Key>
+            <PropertyRef Name="GameId" />
+          </Key>
+          <Property Name="GameId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" />
+          <Property Name="DetailXml" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Total" Type="Int32" />
+          <Property Name="Solos" Type="Int32" />
+          <Property Name="Warnings" Type="Int32" />
+          <Property Name="Time" Type="Int32" />
+          <Property Name="Percentage" Type="Double" />
+          <Property Name="TopLost" Type="Int32" />
+          <Property Name="Top" Type="Int32" />
+          <Property Name="Negative" Type="Int32" />
+          <Property Name="Selection" Type="Int32" />
+          <Property Name="Rating" Type="Int32" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Type="Guid" Name="GameConfigId" />
+          <NavigationProperty Name="GameConfigs" Relationship="TopMachineDBModel.FK__GamesDeta__GameC__756D6ECB" FromRole="GamesDetail" ToRole="GameConfigs" />
+        </EntityType>
+        <Association Name="FK__GamesDeta__GameC__756D6ECB">
+          <End Type="TopMachineDBModel.GameConfigs" Role="GameConfigs" Multiplicity="0..1" />
+          <End Type="TopMachineDBModel.GamesDetail" Role="GamesDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GameConfigs">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GamesDetail">
+              <PropertyRef Name="GameConfigId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TopMachineDBModelStoreContainer" CdmEntityContainer="TopMachineDBEntities">
+          <EntitySetMapping Name="GameConfigs">
+            <EntityTypeMapping TypeName="TopMachineDBModel.GameConfigs">
+              <MappingFragment StoreEntitySet="GameConfigs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="XmlConfig" ColumnName="XmlConfig" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GameRankings">
+            <EntityTypeMapping TypeName="TopMachineDBModel.GameRankings">
+              <MappingFragment StoreEntitySet="GameRankings">
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="Month" ColumnName="Month" />
+                <ScalarProperty Name="ConfigGameId" ColumnName="ConfigGameId" />
+                <ScalarProperty Name="Playerid" ColumnName="Playerid" />
+                <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+                <ScalarProperty Name="NbParties" ColumnName="NbParties" />
+                <ScalarProperty Name="LostTops" ColumnName="LostTops" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="TotalTops" ColumnName="TotalTops" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="Serie" ColumnName="Serie" />
+                <ScalarProperty Name="PlayerTop" ColumnName="PlayerTop" />
+                <ScalarProperty Name="GameTop" ColumnName="GameTop" />
+                <ScalarProperty Name="Selection" ColumnName="Selection" />
+                <ScalarProperty Name="BestTime" ColumnName="BestTime" />
+                <ScalarProperty Name="BestScore" ColumnName="BestScore" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Games">
+            <EntityTypeMapping TypeName="TopMachineDBModel.Games">
+              <MappingFragment StoreEntitySet="Games">
+                <ScalarProperty Name="GameId" ColumnName="GameId" />
+                <ScalarProperty Name="GameConfigId" ColumnName="GameConfigId" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="GameXml" ColumnName="GameXml" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GamesDetail">
+            <EntityTypeMapping TypeName="TopMachineDBModel.GamesDetail">
+              <MappingFragment StoreEntitySet="GamesDetail">
+                <ScalarProperty Name="GameConfigId" ColumnName="GameConfigId" />
+                <ScalarProperty Name="GameId" ColumnName="GameId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="DetailXml" ColumnName="DetailXml" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="Solos" ColumnName="Solos" />
+                <ScalarProperty Name="Warnings" ColumnName="Warnings" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+                <ScalarProperty Name="TopLost" ColumnName="TopLost" />
+                <ScalarProperty Name="Top" ColumnName="Top" />
+                <ScalarProperty Name="Negative" ColumnName="Negative" />
+                <ScalarProperty Name="Selection" ColumnName="Selection" />
+                <ScalarProperty Name="Rating" ColumnName="Rating" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="IsTypeOf(TopMachineDBModel.Users)">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="isAdmin" ColumnName="isAdmin" />
+                <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+                <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <edmx:DesignerProperty Name="EnablePluralization" Value="False" />
+        <edmx:DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <edmx:DesignerProperty Name="UseLegacyProvider" Value="True" />
+        <edmx:DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <edmx:Diagram Name="TopMachineSql" ZoomLevel="77">
+        <edmx:EntityTypeShape EntityType="TopMachineDBModel.GameConfigs" Width="1.5" PointX="2.75" PointY="0.75" Height="1.4033821614583335" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="TopMachineDBModel.GameRankings" Width="1.5" PointX="2.75" PointY="3.75" Height="4.0956022135416656" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="TopMachineDBModel.Games" Width="1.5" PointX="4.75" PointY="0.75" Height="2.1725878906249996" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="TopMachineDBModel.GamesDetail" Width="1.5" PointX="4.75" PointY="3.75" Height="3.9033007812499996" IsExpanded="true" />
+        <edmx:AssociationConnector Association="TopMachineDBModel.FK__GamesDeta__GameC__756D6ECB">
+          <edmx:ConnectorPoint PointX="4.25" PointY="1.547841796875" />
+          <edmx:ConnectorPoint PointX="4.5" PointY="1.547841796875" />
+          <edmx:ConnectorPoint PointX="4.5" PointY="3.1725878906249996" />
+          <edmx:ConnectorPoint PointX="5.5" PointY="3.1725878906249996" />
+          <edmx:ConnectorPoint PointX="5.5" PointY="3.75" />
+        </edmx:AssociationConnector>
+        <edmx:EntityTypeShape EntityType="TopMachineDBModel.Users" Width="1.5" PointX="0.5" PointY="0.5" />
+      </edmx:Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

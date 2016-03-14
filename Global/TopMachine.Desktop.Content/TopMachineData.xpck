@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Key>TopMachineData</Key>
+  <IsTranslation>false</IsTranslation>
+  <Registered>false</Registered>
+  <Crypted>false</Crypted>
+  <Enabled>true</Enabled>
+  <LocationType>PersonalFiles</LocationType>
+  <FileType>File</FileType>
+  <Items>
+    <Package>
+      <Key>NavigationImages</Key>
+      <IsTranslation>false</IsTranslation>
+      <Registered>false</Registered>
+      <Crypted>false</Crypted>
+      <Enabled>true</Enabled>
+      <Filename>NavigationImages</Filename>
+      <LocationType>PersonalFiles</LocationType>
+      <FileType>Folder</FileType>
+      <Items>
+        <Package>
+          <Key>Topping</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>Topping.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>NavigationImages\Topping.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:19:20.1405457+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>CountrySelect</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>CountrySelect.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>NavigationImages\CountrySelect.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:20:41.845219+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>DicoSelect</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>DicoSelect.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>NavigationImages\DicoSelect.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:20:41.8492192+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>DictionaryReader</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>DictionaryReader.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>NavigationImages\DictionaryReader.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:20:41.8502192+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Quit</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>Quit.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>NavigationImages\Quit.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:20:41.8522194+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Register</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>Register.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>NavigationImages\Register.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:20:41.8532194+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Topping</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>Topping.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>NavigationImages\Topping.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:20:41.8542195+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>WordSearch</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>WordSearch.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>NavigationImages\WordSearch.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:20:41.8552195+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Games</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>Games.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>NavigationImages\Games.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-26T23:45:32.4535681+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Admin</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>Admin.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>NavigationImages\Admin.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-26T23:45:32.4555682+01:00</VersionDate>
+          <Attributes />
+        </Package>        
+        <Package>
+          <Key>Settings</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>Settings.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>NavigationImages\Settings.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-26T23:45:32.4555682+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Training</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>Training.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>NavigationImages\Training.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-26T23:45:32.4555682+01:00</VersionDate>
+          <Attributes />
+        </Package>
+      </Items>
+      <Version>1.0.0</Version>
+      <VersionDate>2010-12-19T19:18:16.1798874+01:00</VersionDate>
+      <Attributes />
+    </Package>
+    <Package>
+      <Key>Data</Key>
+      <IsTranslation>false</IsTranslation>
+      <Registered>false</Registered>
+      <Crypted>false</Crypted>
+      <Enabled>true</Enabled>
+      <Filename>Data</Filename>
+      <LocationType>PersonalFiles</LocationType>
+      <FileType>Folder</FileType>
+      <Items>
+        <Package>
+          <Key>BASENL</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>diconl.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\diconl.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>GRIDNFR</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>GrilleNormalFR.txt</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\GrilleNormalFR.txt</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>GRIDNFRSLC</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>GrilleNormalSLC.txt</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\GrilleNormalSLC.txt</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>GRIDNFR1PT</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>GrilleNormal1PTS.txt</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\GrilleNormal1PTS.txt</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>GRIDSFR</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>GrilleSuper.txt</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\GrilleSuper.txt</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>GRIDNNL</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>GrilleNormalNL.txt</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\GrilleNormalNL.txt</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>GRIDNUK</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>GrilleNormalUK.txt</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\GrilleNormalUK.txt</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>GRIDNUS</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>GrilleNormalUS.txt</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\GrilleNormalUS.txt</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BASEFR</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>ods5.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\ods5.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BASEFRNOC</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>ods5noc.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\ods5noc.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BASEFRC</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>ods5c.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\ods5c.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BASEUK</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>sowpods06.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\sowpods06.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BASEUS</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>true</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>twl06.dawg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\twl06.dawg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-19T19:21:32.8161343+01:00</VersionDate>
+          <Attributes />
+        </Package>
+      </Items>
+      <Version>1.0.0</Version>
+      <VersionDate>2010-12-19T19:21:06.742643+01:00</VersionDate>
+      <Attributes />
+    </Package>
+    <Package>
+      <Key>TopMachine.Training.FrontEnd</Key>
+      <IsTranslation>false</IsTranslation>
+      <Registered>false</Registered>
+      <Crypted>false</Crypted>
+      <Enabled>true</Enabled>
+      <Filename>TopMachine.Training.FrontEnd.dll</Filename>
+      <Description>TopMachine.Training.FrontEnd, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Description>
+      <LocationType>CustomFiles</LocationType>
+      <FileType>Assembly</FileType>
+      <Items />
+      <OriginalFile>Executables\TopMachine.Training.FrontEnd.dll</OriginalFile>
+      <Version>1.0.0</Version>
+      <VersionDate>2010-12-19T22:54:44.4341099+01:00</VersionDate>
+      <Attributes />
+    </Package>
+    <Package>
+      <Key>TopMachine.Desktop.Dico</Key>
+      <IsTranslation>false</IsTranslation>
+      <Registered>false</Registered>
+      <Crypted>false</Crypted>
+      <Enabled>true</Enabled>
+      <Filename>TopMachine.Desktop.Dico.dll</Filename>
+      <Description>TopMachine.Desktop.Dico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Description>
+      <LocationType>CustomFiles</LocationType>
+      <FileType>Assembly</FileType>
+      <Items />
+      <OriginalFile>Executables\TopMachine.Desktop.Dico.dll</OriginalFile>
+      <Version>1.0.0</Version>
+      <VersionDate>2010-12-19T22:54:44.4341099+01:00</VersionDate>
+      <Attributes />
+    </Package>
+    <Package>
+      <Key>TopMachine.Desktop.Register</Key>
+      <IsTranslation>false</IsTranslation>
+      <Registered>false</Registered>
+      <Crypted>false</Crypted>
+      <Enabled>true</Enabled>
+      <Filename>TopMachine.Desktop.Register.dll</Filename>
+      <Description>TopMachine.Desktop.Register, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Description>
+      <LocationType>CustomFiles</LocationType>
+      <FileType>Assembly</FileType>
+      <Items />
+      <OriginalFile>Executables\TopMachine.Desktop.Register.dll</OriginalFile>
+      <Version>1.0.0</Version>
+      <VersionDate>2010-12-19T22:54:44.5641174+01:00</VersionDate>
+      <Attributes />
+    </Package>
+    <Package>
+      <Key>TopMachine.Desktop.WordSearch</Key>
+      <IsTranslation>false</IsTranslation>
+      <Registered>false</Registered>
+      <Crypted>false</Crypted>
+      <Enabled>true</Enabled>
+      <Filename>TopMachine.Desktop.WordSearch.dll</Filename>
+      <Description>TopMachine.Desktop.WordSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Description>
+      <LocationType>CustomFiles</LocationType>
+      <FileType>Assembly</FileType>
+      <Items />
+      <OriginalFile>Executables\TopMachine.Desktop.WordSearch.dll</OriginalFile>
+      <Version>1.0.0</Version>
+      <VersionDate>2010-12-19T22:54:44.7221264+01:00</VersionDate>
+      <Attributes />
+    </Package>
+    <Package>
+      <Key>Databases</Key>
+      <IsTranslation>false</IsTranslation>
+      <Registered>false</Registered>
+      <Crypted>false</Crypted>
+      <Enabled>true</Enabled>
+      <Filename>Databases</Filename>
+      <LocationType>PersonalFiles</LocationType>
+      <FileType>Folder</FileType>
+      <Items>
+        <Package>
+          <Key>DicoFR</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>DicoFR.db</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Data\DicoFR.db</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-20T23:12:55.6738823+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Topping</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>Topping.db</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Databases\Topping.db</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2011-01-09T19:21:28.0082447+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Topping4dbo</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>Topping.dbo</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Databases\Topping.4dbo</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2011-01-09T19:21:28.0082447+01:00</VersionDate>
+          <Attributes />
+        </Package>        
+      </Items>
+      <Version>1.0.0</Version>
+      <VersionDate>2010-12-20T23:12:13.6194769+01:00</VersionDate>
+      <Attributes />
+    </Package>
+    <Package>
+      <Key>TopMachine.Desktop.Frontend</Key>
+      <IsTranslation>false</IsTranslation>
+      <Registered>false</Registered>
+      <Crypted>false</Crypted>
+      <Enabled>true</Enabled>
+      <Filename>TopMachine.Desktop.Frontend.dll</Filename>
+      <Description>TopMachine.Desktop.Frontend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Description>
+      <LocationType>CustomFiles</LocationType>
+      <FileType>Assembly</FileType>
+      <Items />
+      <OriginalFile>C:\Projects\TopMachine.2011\TopMachine.Desktop\TopMachine.Desktop.Frontend\bin\Debug\TopMachine.Desktop.Frontend.dll</OriginalFile>
+      <Version>1.0.0</Version>
+      <VersionDate>2010-12-25T20:52:23.255353+01:00</VersionDate>
+      <Attributes />
+    </Package>
+    <Package>
+      <Key>ApplicationImages</Key>
+      <IsTranslation>false</IsTranslation>
+      <Registered>false</Registered>
+      <Crypted>false</Crypted>
+      <Enabled>true</Enabled>
+      <Filename>ApplicationImages</Filename>
+      <LocationType>PersonalFiles</LocationType>
+      <FileType>Folder</FileType>
+      <Items>
+        <Package>
+          <Key>Application</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>application.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>ApplicationImages\application.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9970397+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Background</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>background.jpg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>ApplicationImages\background.jpg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9980398+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>ChalkBoard</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>chalkboard.jpg</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>ApplicationImages\chalkboard.jpg</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9980398+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Cancel</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>cancel.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>ApplicationImages\cancel.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9980398+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Minus</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>minus.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>ApplicationImages\minus.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9980398+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Plus</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>plus.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>ApplicationImages\plus.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9980398+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Topping</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>Toppingshort.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>ApplicationImages\Toppingshort.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9980398+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Settings</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>wrench_orange.png</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Image</FileType>
+          <Items />
+          <OriginalFile>ApplicationImages\wrench_orange.png</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9980398+01:00</VersionDate>
+          <Attributes />
+        </Package>
+      </Items>
+      <Version>1.0.0</Version>
+      <VersionDate>2010-12-27T22:09:27.7068792+01:00</VersionDate>
+      <Attributes />
+    </Package>
+    <Package>
+      <Key>TopMachine.Topping.Frontend</Key>
+      <IsTranslation>false</IsTranslation>
+      <Registered>false</Registered>
+      <Crypted>false</Crypted>
+      <Enabled>true</Enabled>
+      <Filename>TopMachine.Topping.Frontend.dll</Filename>
+      <Description>TopMachine.Topping.FrontEnd, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Description>
+      <LocationType>CustomFiles</LocationType>
+      <FileType>Assembly</FileType>
+      <Items />
+      <OriginalFile>Executables\TopMachine.Topping.Frontend.dll</OriginalFile>
+      <Version>1.0.0</Version>
+      <VersionDate>2011-01-08T00:12:33.4224111+01:00</VersionDate>
+      <Attributes />
+    </Package>
+    <Package>
+      <Key>Sounds</Key>
+      <IsTranslation>false</IsTranslation>
+      <Registered>false</Registered>
+      <Crypted>false</Crypted>
+      <Enabled>true</Enabled>
+      <Filename>Sounds</Filename>
+      <LocationType>PersonalFiles</LocationType>
+      <FileType>Folder</FileType>
+      <Items>
+        <Package>
+          <Key>EndRound</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>ok.wav</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Resource</FileType>
+          <Items />
+          <OriginalFile>Sounds\ok.wav</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9970397+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>BeforeEndRound</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>gong.wav</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Resource</FileType>
+          <Items />
+          <OriginalFile>Sounds\gong.wav</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9970397+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Login</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>connect.wav</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Resource</FileType>
+          <Items />
+          <OriginalFile>Sounds\connect.wav</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9970397+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Logout</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>disconnect.wav</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Resource</FileType>
+          <Items />
+          <OriginalFile>sounds\disconnect.wav</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9970397+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>Chat</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>tell.wav</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Resource</FileType>
+          <Items />
+          <OriginalFile>Sounds\tell.wav</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9970397+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>StartGame</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>newgame.wav</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Resource</FileType>
+          <Items />
+          <OriginalFile>Sounds\newgame.wav</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9970397+01:00</VersionDate>
+          <Attributes />
+        </Package>
+        <Package>
+          <Key>EndGame</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>endgame.wav</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>Resource</FileType>
+          <Items />
+          <OriginalFile>Sounds\endgame.wav</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-27T22:09:47.9970397+01:00</VersionDate>
+          <Attributes />
+        </Package>
+      </Items>
+      <Version>1.0.0</Version>
+      <VersionDate>2010-12-27T22:09:27.7068792+01:00</VersionDate>
+      <Attributes />
+    </Package>
+  </Items>
+  <Version>1.0.0</Version>
+  <VersionDate>2010-12-19T19:15:37.9048346+01:00</VersionDate>
+  <Attributes />
+</Package>

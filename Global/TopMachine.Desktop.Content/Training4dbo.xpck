@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Key>Training4dbo</Key>
+  <IsTranslation>false</IsTranslation>
+  <Registered>false</Registered>
+  <Crypted>false</Crypted>
+  <Enabled>true</Enabled>
+  <LocationType>PersonalFiles</LocationType>
+  <FileType>File</FileType>
+  <Items>
+    <Package>
+      <Key>Templates</Key>
+      <IsTranslation>false</IsTranslation>
+      <Registered>false</Registered>
+      <Crypted>false</Crypted>
+      <Enabled>true</Enabled>
+      <Filename>Templates</Filename>
+      <LocationType>PersonalFiles</LocationType>
+      <FileType>Folder</FileType>
+      <Items>
+        <Package>
+          <Key>TrainingEmpty</Key>
+          <IsTranslation>false</IsTranslation>
+          <Registered>false</Registered>
+          <Crypted>false</Crypted>
+          <Enabled>true</Enabled>
+          <Filename>TrainingEmpty.db</Filename>
+          <LocationType>PersonalFiles</LocationType>
+          <FileType>File</FileType>
+          <Items />
+          <OriginalFile>Templates\TrainingEmpty.db</OriginalFile>
+          <Version>1.0.0</Version>
+          <VersionDate>2010-12-26T23:37:03.9934858+01:00</VersionDate>
+          <Attributes />
+        </Package>
+      </Items>
+      <Version>1.0.0</Version>
+      <VersionDate>2010-12-26T23:36:03.0580005+01:00</VersionDate>
+      <Attributes />
+    </Package>
+    <Package>
+      <Key>Lists</Key>
+      <IsTranslation>false</IsTranslation>
+      <Registered>false</Registered>
+      <Crypted>false</Crypted>
+      <Enabled>true</Enabled>
+      <Filename>Lists</Filename>
+      <LocationType>PersonalFiles</LocationType>
+      <FileType>Folder</FileType>
+      <Items />
+      <Version>1.0.0</Version>
+      <VersionDate>2010-12-29T18:02:57.3741449+01:00</VersionDate>
+      <Attributes />
+    </Package>
+  </Items>
+  <Version>1.0.0</Version>
+  <VersionDate>2010-12-26T23:35:22.2146644+01:00</VersionDate>
+  <Attributes />
+</Package>
